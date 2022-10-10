@@ -1,0 +1,138 @@
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite outro valor: '))
+s = n1 + n2
+print('A soma entre {} + {} é igual a: {}!'.format(n1, n2, s))
+a = input ('Digite algo: ')
+
+print('O tipo primitivo desse valor é', type(a))
+print('Só tem espaços?', a.isspace())
+print('É um número?', a.isnumeric())
+print('É um alfabético?', a.isalpha())
+print('É alfanumérico?', a.isalnum())
+
+a: str = input('Digite algo: ')
+print('O tipo primitivo desse valor é', type (a))
+print('Só tem espaços?', a.isspace())
+print('É só um número?', a.isnumeric())
+print('É um alfabético?', a.isalpha())
+print('É alfanumérico?', a.isalnum())
+print('Está em maiúscula?', a.isupper())
+print('Está em minúsculas?', a.islower())
+print('Está capitalizada?', a.istitle())
+
+nome = input('Digite seu nome: ')
+print('Seja Bem-Vindo, '+ nome + '!')
+dia = input('Em qual dia vc nasceu? ')
+mês = input('Em qual mês vc nasceu? ')
+ano = input('Em qual ano vc nasceu? ')
+print(dia, mês, ano)
+
+n = int(input('Digite um número: '))
+a = n - 1
+s = n + 1
+print('Analisando o valor {}, seu antecessor é: {} e o sucessor é: {}'.format(n,a,s))
+
+nome = input('Qual é o seu nome? ')
+print('Prazer em te conhecer {}!'.format(nome))
+n1 = int(input('Um valor:' ))
+n2 = int(input('Outro valor: '))
+s = n1 + n2
+m = n1 * n2
+d = n1 / n2
+di = n1 // n2
+e = n1 ** n2
+print('A soma é: {}, o produto é: {} e a divisão é: {}'.format(s, m, d), end='>>>')
+
+import math
+ângulo = float(input('Digite o ângulo que você deseja: '))
+seno = math.sin(math.radians(ângulo))
+print('O ângulo de {} tem o SENO de {:.2f}'.format(ângulo, seno))
+cosseno = math.cos(math.radians(ângulo))
+print('O ângulo de {} tem o COSSENO de {:.2f}'.format(ângulo, cosseno))
+tangente = math.tan(math.radians(ângulo))
+print('O ângulo de {} tem o TANGENTE de {:.2f}'.format(ângulo, tangente))
+
+from math import hypot
+co = float(input('Comprimeto do cateto oposto: '))
+ca = float(input('Comprimento do cateto adjacente: '))
+hi = hypot(co, ca)
+print('A hipotenusa vai medir {:.2f}'.format(hi))
+
+nome = str(input('Digite seu nome completo: ' )).strip()
+print('Anasilando seu nome...')
+print('Seu nome em maiúsculas é {}'.format(nome.upper()))
+print('Seu nome em minúsculas é {}'.format(nome.lower()))
+print('Seu nome tem ao todo {} letras'.format(len(nome) - nome.count(' ')))
+print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
+
+c = float(input('Informe a temperatura em °C: '))
+f = ((9 * c) / 5) + 32
+print('A temperatura de {}°C corresponde a {}°F!'.format(c, f))
+
+dias = int(input('Quantos dias alugados? '))
+km = float(input('Quantos KM rodados? '))
+pago = dias * 60 + (km  * 0.15)
+print('O total a pagar é de R${:.2f}'.format(pago))
+
+preço = float(input('Qual é o preço do produto? R$'))
+novo = preço - (preço * 5 / 100)
+print('O produto custava R${:.2f}, na promoção com desconto de 5% vai custar R${:.2f}'.format(preço, novo))
+
+salário = float(input('Qual é o salário do Funcionário? R$ '))
+novo = salário + (salário * 15 / 100)
+print('Um funcionário que ganhava: R${:.2f}, com 15% de desconto passa a ganhar: R${:.2f}'.format(salário, novo))
+
+larg = float(input('Largura da parede: '))
+alt = float(input('Altura da parede: '))
+area = larg * alt
+print('Sua parede tem a dimensão de {}x{} e sua àrea é de {}m².'.format(larg, alt, area))
+tinta = area / 2
+print('Para pintar essa parede, você precisará de {}L de tinta.'.format(tinta))
+
+nc = str(input('Digite seu nome completo: '))
+div = nc.split()
+sn = ' '.join(div[1:])
+print('Olá {}! Achei seu sobrenome {} muito bonito!'.format(div[0], sn))
+
+n = int(input('Digite um número: '))
+d = n * 2
+t = n * 3
+r = n ** (1/2)
+print('O dobro de: {} vale: {}.'.format(n, d))
+print('O triplo de: {} vale: {}. \nA raiz quadrada de: {} é igual a: {:.2f}.'.format(n, d, t, r))
+
+n1 = float(input('Primeira nota do aluno: '))
+n2 = float(input('Segunda nota do Aluno: '))
+média = (n1 + n2) / 2
+print('A média entre: {:.1f} e: {:.1f} é igual a: {:.1f}'.format(n1, n2, média))
+
+medida = float(input('Uma distância em metros: '))
+cm = medida * 100
+mm = medida * 1000
+print('A media de {}m corresponde a {}cm e {}mm'.format(medida, cm, mm))
+
+num = int(input('Escolha a sua tabuada para ver os resultados: '))
+print('{} x {} = {}'.format(num, 1, num*1))
+print('{} x {} = {}'.format(num, 2, num*2))
+print('{} x {} = {}'.format(num, 3, num*3))
+print('{} x {} = {}'.format(num, 4, num*4))
+print('{} x {} = {}'.format(num, 5, num*5))
+print('{} x {} = {}'.format(num, 6, num*6))
+print('{} x {} = {}'.format(num, 7, num*7))
+print('{} x {} = {}'.format(num, 8, num*8))
+print('{} x {} = {}'.format(num, 9, num*9))
+print('{} x {} = {}'.format(num, 10, num*10))
+
+c = float(input('Informe a temperatura em °C: '))
+f = ((9 * c) / 5) + 32
+print('A temperatura de {}°C corresponde a {}°F!'.format(c, f))
+
+dias = int(input('Quantos dias alugados? '))
+km = float(input('Quantos KM rodados? '))
+pago = dias * 60 + (km  * 0.15)
+print('O total a pagar é de R${:.2f}'.format(pago))
+
+import math
+num = float(input('Digite um valor: '))
+print('O valor digitado foi {} e a sua porção inteira é {}'.format(num, math.trunc(num)))
+
